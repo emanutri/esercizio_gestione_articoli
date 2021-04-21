@@ -13,8 +13,6 @@
 		<jsp:include page="../navbar.jsp" />
 		<main role="main" class="container">
 		
-		
-		
 			<div class='card'>
 			    <div class='card-header'>
 			        Sei sicuro di voler eliminare il seguente articolo?
@@ -22,6 +20,7 @@
 	   		   	<% Articolo articoloInPagina = (Articolo)request.getAttribute("articoloDaEliminare"); %>
 			    
 			    <div class='card-body'>
+			    	
 			    	<dl class="row">
 					  <dt class="col-sm-3 text-right">Codice</dt>
 					  <dd class="col-sm-9"><%=articoloInPagina.getCodice() %></dd>
@@ -45,16 +44,16 @@
 			    </div>
 			    
 			    <div class='card-footer'>
-			    <form method="post" action="ExecuteModificaArticoloServlet">
-			    	<a href="ListArticoliServlet" class="btn  btn-sm btn-outline-secondary" style='width:80px'>
-		            <i class='fa fa-chevron-left'></i> Back
-			        </a>
-				    <button type="submit" name="elimina" value="elimina" id="elimina" class="btn btn-outline-danger btn-sm">Elimina</button>
-				    <input type="hidden" name ="inputId" value=<%=articoloInPagina.getId() %>>
+			    	<form method="post" action="ExecuteModificaArticoloServlet">
+				    	
+				    	<a href="ListArticoliServlet" class="btn  btn-sm btn-outline-secondary" style='width:80px'>
+			            <i class='fa fa-chevron-left'></i> Back
+				        </a>
+					   
+					    <button type="submit" name="elimina" value="elimina" id="elimina" class="btn btn-outline-danger btn-sm">Elimina</button>
+					    <input type="hidden" name ="inputId" value=<%=articoloInPagina.getId() %>>
 			    
-			    </form>
-			        
-			           
+			    	</form>
 			    </div>
 			</div>	
 		</main>
