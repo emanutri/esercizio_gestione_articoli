@@ -6,7 +6,7 @@
 <html>
 	<head>
 		<jsp:include page="../header.jsp" />
-		<title>Inserisci nuovo</title>
+		<title>Modifica articolo</title>
 		
 		<!-- style per le pagine diverse dalla index -->
 	    <link href="./assets/css/global.css" rel="stylesheet">

@@ -44,7 +44,7 @@
 			    </div>
 			    
 			    <div class='card-footer'>
-			    	<form method="post" action="ExecuteModificaArticoloServlet">
+			    	<form method="post" action="ExecuteDeleteArticoloServlet">
 				    	
 				    	<a href="ListArticoliServlet" class="btn  btn-sm btn-outline-secondary" style='width:80px'>
 			            <i class='fa fa-chevron-left'></i> Back
